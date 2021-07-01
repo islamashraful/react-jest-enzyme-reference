@@ -16,6 +16,7 @@ const CarouselSlide = ({
   imgHeight,
   description,
   attribution,
+  Img,
   ...rest
 }) => (
   <figure {...rest}>
