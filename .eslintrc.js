@@ -13,8 +13,9 @@ module.exports = {
     node: true,
   },
   rules: {
+    "comma-dangle": ["error", "always-multiline"],
+    "no-unused-vars": ["error", { varsIgnorePattern: "^_" }],
     // quotes: ["error", "single", { avoidEscape: true }],
-    // "comma-dangle": ["error", "always-multiline"],
   },
   settings: {
     react: {
