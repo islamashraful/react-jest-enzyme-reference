@@ -7,7 +7,8 @@
     "test": "jest",
     "lint": "eslint . && prettier-eslint --list-different **/*.js",
     "format": "prettier-eslint --write **/*.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --config webpack.config.js --open"
   },
   "keywords": [],
   "author": "",
@@ -31,7 +32,8 @@
     "prettier-eslint-cli": "^4.7.1",
     "react-dom": "^16.4.2",
     "webpack": "^4.26.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
