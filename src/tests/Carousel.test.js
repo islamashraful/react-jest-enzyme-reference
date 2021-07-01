@@ -69,11 +69,11 @@ describe("Carousel", () => {
   it("renders the current slide as a CarouselSlide", () => {
     let slideProps;
     slideProps = wrapper.find(CarouselSlide).props();
-    expect(slideProps).toEqual(slides[0]);
+    expect(slideProps).toEqual({ ...CarouselSlide.defaultProps, ...slides[0] });
 
     wrapper.setState({ slideIndex: 1 });
     slideProps = wrapper.find(CarouselSlide).props();
-    expect(slideProps).toEqual(slides[1]);
+    expect(slideProps).toEqual({ ...CarouselSlide.defaultProps, ...slides[1] });
   });
 
   describe("with last slide selected", () => {
