@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarouselSlide renders correctly 1`] = `
+<figure>
+  <CarouselSlide__Img
+    imgHeight={500}
+    src="https://example.com/default.jpg"
+  />
+  <figcaption>
+    <strong>
+      Description
+    </strong>
+     
+    Attribution
+  </figcaption>
+</figure>
+`;
+
+exports[`Img renders correctly 1`] = `
+.c0 {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+<img
+  className="c0"
+  src="https://example.com/default.jpg"
+/>
+`;
